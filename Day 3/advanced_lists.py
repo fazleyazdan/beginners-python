@@ -1,7 +1,9 @@
 # lists in python
 
 cars = ['audi', 'ferrari', 'toyota', 'honda']
+print(cars)
 
+print()                         #! empty print() statement is for extra line spacing 
 message = f'my first car was not a {cars[1].title()}'      
 print(message)
 print()
@@ -10,24 +12,25 @@ print()
 cars.append('kia')
 
 print("after appending: ")
-for car in cars:
+for car in cars:                #! using for loop to iterate and print value of list one by one
     print(car)
 
 
 # removing specific value from a list 
-cars.remove('ferrari')
-
 print()
+
+cars.remove('ferrari')
 print("after removing specific value:")
-for car in cars:
-    print(car)
+print(cars)
+
     
 # reversing the list
 print()
-print("after reversing the list")
+
 cars.reverse()
-for car in cars:
-    print(car)
+print("after reversing the list: ")
+print(cars)
+
 
 # printing the length of a list
 print()
@@ -35,15 +38,15 @@ print("length of cars ", len(cars))
 
 #  sorting the list by alphabets
 print()
-
 cars.sort()
-for car in cars:
-    print(car)
+print("after sorting the list:")
+print(cars)
     
 # making copy of a list
 print()
-print("after copying the list")
-
 cars_copy = cars.copy()
-for carcopy in cars_copy:
-    print(carcopy)
+print("after copying the list:")
+print(cars_copy)
+
+
+
