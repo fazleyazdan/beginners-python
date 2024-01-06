@@ -10,3 +10,6 @@ if age >= 12:
     price = 10
 
 print("your admission fee is " + str(price) + "$.")
+
+
+
