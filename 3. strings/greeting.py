@@ -4,7 +4,7 @@
 # friends = """ ... """.split(): This creates a multiline string with names separated by newlines 
 # and then uses the split() method to convert it into a list of names. Each name becomes an element in the list.
 
-friends = """Coral Alfaro
+greeting_list = """Coral Alfaro
 Phillip Ryan
 Alfred Odling
 Cohan Gardner
@@ -44,8 +44,8 @@ Eve Shah
 """.split()
 
 # print(friends)
-print(len(friends))
+print(len(greeting_list))
 
-for i in range(int(len(friends)/2)):               # (int(len(friends)/2)): this will iterate half of the list (will iterate first names)
-    print(friends[2*i] +" "+ friends[2*i+1])       # friends(2*i+1): this will iterate the last name and will concatenate it with f.name
+for i in range(int(len(greeting_list)/2)):                               # (int(len(friends)/2)): this will iterate half of the list (will iterate first names)
+        print(f"welcome {greeting_list[i*2]} {greeting_list[i*2+1]} !")  # friends(2*i+1): this will iterate the last name and will concatenate it with f.name
  
