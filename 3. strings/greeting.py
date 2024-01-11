@@ -1,5 +1,5 @@
 # this code prints pairs of names from the friends list in the format "First_Name Last_Name". 
-# Note that this code assumes that the number of names is even and that each name consists of a first name and a last name. 
+#* Note that this code assumes that the number of names is even and that each name consists of a first name and a last name. 
 # If the number of names is odd or if names are formatted differently, the code may not behave as expected.
 # friends = """ ... """.split(): This creates a multiline string with names separated by newlines 
 # and then uses the split() method to convert it into a list of names. Each name becomes an element in the list.
@@ -46,6 +46,6 @@ Eve Shah
 # print(friends)
 print(len(greeting_list))
 
-for i in range(int(len(greeting_list)/2)):                               # (int(len(friends)/2)): this will iterate half of the list (will iterate first names)
-        print(f"welcome {greeting_list[i*2]} {greeting_list[i*2+1]} !")  # friends(2*i+1): this will iterate the last name and will concatenate it with f.name
+for i in range(int(len(greeting_list)/2)):                               #* (int(len(friends)/2)): this will iterate half of the list (will iterate first names)
+        print(f"welcome {greeting_list[i*2]} {greeting_list[i*2+1]} !")  #* friends(2*i+1): this will iterate the last name and will concatenate it with f.name
  
