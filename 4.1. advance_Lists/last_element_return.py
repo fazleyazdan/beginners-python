@@ -25,7 +25,14 @@ print(f"after removing 'honda' from the list: {cars}")
 cars.insert(3,'honda')
 print(f"after inserting an element at index 3 : {cars}")
 
-#* popping item from any position in a list
 
+#* popping item from any position in a list
 cars.pop(0)
 print(f"the first item is popped from the list: {cars}")
+
+
+#* deleting an element from the list
+del cars[2]
+print(f"after deleting 'honda' from the list: {cars}")
+
+      
