@@ -1,5 +1,5 @@
 
-my_name = "fazle yazdan"
+myName = "fazle yazdan"
 
-print(f"my name is : {my_name}")
+print(f"my name is : {myName}")
       
