@@ -16,7 +16,7 @@ print("\noh sorry but our table is small for the guests")
 
 def pop_guests():
     remove_guests = guest_list.pop()
-    print(f"{remove_guests} sorry you are not invited")
+    print(f"{remove_guests} sorry but you are not invited")
 
 pop_guests()
 pop_guests()
