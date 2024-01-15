@@ -1,7 +1,7 @@
 # This syntax is quite useful, because you’ll often want to access the last items in a list without knowing 
 # exactly how long the list is
 
-cars = ['audi', 'ferrari', 'toyota', 'honda']
+cars = ['toyota', 'ferrari', 'audi', 'honda']
 print("\nlast car i owned was:" + cars[-1])
 
 
@@ -27,12 +27,17 @@ print(f"after inserting an element at index 3 : {cars}")
 
 
 #* popping item from any position in a list
-cars.pop(0)
-print(f"the first item is popped from the list: {cars}")
+cars.pop(1)
+print(f"the second item is popped from the list: {cars}")
 
 
 #* deleting an element from the list
 del cars[2]
+
 print(f"after deleting 'honda' from the list: {cars}")
+
+print("temporarily sorting the list", sorted(cars))
+
+print("now printing the list again",cars)
 
       
