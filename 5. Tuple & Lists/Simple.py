@@ -4,3 +4,6 @@
 dimensions = (200,50)
 
 print(f"first dimension is: {dimensions[0]}")
+
+# dimensions [0] = 250                  # this will give error. because tuple is immutable
+
