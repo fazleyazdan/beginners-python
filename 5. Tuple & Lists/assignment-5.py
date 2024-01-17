@@ -10,7 +10,7 @@ foods_tuple = ('grilled beef', 'grilled chicken', 'biryani', 'kabali pulao', 'ta
 for food in foods_tuple:
     print(food)
     
-# foods_tuple [1] = 'kebab'                            # will throw an error
+# foods_tuple[1] = 'kebab'                            # will throw an error
 
 print("\nre writing tuples with some new foods")
 
