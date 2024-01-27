@@ -57,5 +57,5 @@ for new_user in new_users:
     if new_user.lower() in lower_current_user:
          print(f"the username ({new_user}) already exist please enter a new username")
     else:
-         print(f"this username ({new_user}) is available")
+         print(f"This username ({new_user}), is available") 
 
