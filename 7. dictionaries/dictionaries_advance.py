@@ -21,3 +21,17 @@ print("designation added to dictionary:",emp)
 # deleting key-value pair in dictionary
 del (emp['age'])
 print(f"dictionary after deleting employe_age: {emp}")
+
+# When you know you’ll need more than one line to define a dictionary, press ENTER after the opening brace. 
+# Then indent the next line one level (four spaces) and write the first key-value pair, followed by a comma.
+
+fav_languages =  {
+    'kamran': 'c',
+    'shadman': 'python', 
+    'jawad': 'javascript',
+    'hameed': 'ruby',            
+     }
+
+s_language = fav_languages['shadman'].title()
+
+print(f"favorite language of shadman is {s_language}")
