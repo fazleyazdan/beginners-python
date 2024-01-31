@@ -35,3 +35,12 @@ fav_languages =  {
 s_language = fav_languages['shadman'].title()
 
 print(f"favorite language of shadman is {s_language}")
+
+# For dictionaries specifically, you can use the get() method to set 
+# a default value that will be returned if the requested key doesn’t exist.
+# if value not found for a key 'none' default value is returned.
+
+no_language = fav_languages.get('ali', "value for 'ali' does not exist")
+print(no_language)
+no_language = fav_languages.get('ali')                            # returns NONE
+print(no_language)
