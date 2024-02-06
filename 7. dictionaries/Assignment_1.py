@@ -58,4 +58,4 @@ py_glossary = {'dictionary': 'key value pair',
 print("Glossary")
 for key, value in py_glossary.items():
   print(f"\n{key}")
-  print("   ", value) 
+  print("   ", value)                 #* for indentation
