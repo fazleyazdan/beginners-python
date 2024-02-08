@@ -29,7 +29,7 @@ fav_languages =  {
     'kamran': 'c',
     'shadman': 'python', 
     'jawad': 'javascript',
-    'hameed': 'ruby',            
+    'hameed': 'python',            
      }
 
 s_language = fav_languages['shadman'].title()
@@ -46,3 +46,49 @@ print(no_language)
 no_language = fav_languages.get('ali')                            # returns NONE
 print(no_language)
 
+
+print("\nlooping through keys only:")
+for name in fav_languages.keys():
+  print(name)   
+  
+# Looping through the keys is actually the default behavior when looping through a dictionary, 
+# so this code would have exactly the same output if you wrote this.
+print("\ndefault behaviour")
+for name in fav_languages:
+  print(name)
+  
+# looping through values of dictionary only
+print("\nlooping through values only:")
+
+print("following languages has been mentioned in the dictionary:")   
+for value in fav_languages.values():
+  print(value)
+
+# after temporary sorting
+print("\nfollowing fav languages has been mentioned in the dictionary [sorted version]:")   
+for value in sorted(fav_languages.values()):
+  print(value)
+
+# this approach pulls all the values from the dictionary without checking for repeats.
+# To see each number chosen without repetition, we can use a set. 
+# A setis a collection in which each item must be unique:
+
+print("\nuse of set to avoid repeatition:")   
+for value in set(fav_languages.values()):
+  print(value)
+  
+# looping key, values in a dictionary 
+
+print("\nprinting dictionary key value:")
+for key,value in fav_languages.items():
+    print(f"{key}'s favorite language is {value}")
+
+
+# it’s easy to mistake sets for dictionaries because they’re both wrapped in braces. 
+# When you see braces but no key-value pairs, you’re probably looking at a set. 
+# Unlike lists and dictionaries, sets do not retain items in any specific order.
+
+print("\n making a set")
+
+fav_languages = {'python', 'c', 'javascript', 'python'}
+print(fav_languages)

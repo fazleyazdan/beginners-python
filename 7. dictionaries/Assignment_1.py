@@ -28,7 +28,7 @@ fav_num = {'jawad': '7',
            'imran':'1',
            }
 
-print(f"jawad's fav number is {fav_num['jawad']}")
+print(f"\njawad's fav number is {fav_num['jawad']}")
 print(f"Kamran's fav number is {fav_num['kamran']}")
 print(f"asad ali's fav number is {fav_num['asad ali']}")
 print(f"tariq's fav number is {fav_num['tariq']}")
@@ -59,3 +59,22 @@ print("Glossary")
 for key, value in py_glossary.items():
   print(f"\n{key}")
   print("   ", value)                 #* for indentation
+  
+
+print("\nlooping through keys only:")
+for name in fav_num.keys():
+  print(name)   
+# Looping through the keys is actually the default behavior when looping through a dictionary, 
+# so this code would have exactly the same output if you wrote this.
+
+print("\ndefault behaviour")
+for name in fav_num:
+  print(name)
+  
+# looping through values of dictionary only
+print("\nlooping through values only:")
+
+print("following fav number has been mentioned in the dictionary:")   
+for value in fav_num.values():
+  print(value)
+
