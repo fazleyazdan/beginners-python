@@ -66,7 +66,7 @@ for car in cars_list_2[:6]:
     elif car['model'] == '2024':
         car['condition'] = 'Brand new'
         
-print("\nafter playing with the list items.\n")
+print("\nafter playing with the list items:\n")
 for car in cars_list_2[:6]:
     print(car)
  
