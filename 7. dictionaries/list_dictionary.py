@@ -17,7 +17,8 @@ for content in list_dictionary['specs']:
 fav_languages = {'fazleyazdn': ['python', 'JS'],
                  'jawad': ['c', 'rust'],
                  'Hameed': ['JS'],
-                 'shadman': ['dot net', 'c#'],}
+                 'shadman': ['dot net', 'c#'],
+                 'ali': ['ruby']}
 
 for name,languages in fav_languages.items():
     print(f"\n{name.title()}'s fav lamnguages are:")
