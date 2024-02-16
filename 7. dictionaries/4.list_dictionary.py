@@ -25,3 +25,18 @@ for name,languages in fav_languages.items():
     for language in languages:
         print(f"\t{language.title()}") 
         
+# To refine this program even further, you could include an if statement 
+# at the beginning of the dictionary’s for loop to see whether each person has 
+# more than one favorite language by examining the value of len(languages). 
+# If a person has more than one favorite, the output would stay the same. 
+# If the person has only one favorite language, you could change the wording to 
+# reflect that. For example, you could say, “Sarah’s favorite language is C.”
+
+print("\nafter refining the dictionary")
+for name,languages in fav_languages.items():
+    if len(languages)>1:
+        print(f"\n{name.title()}'s fav languages are:")
+        for language in languages:
+            print(f"\t{language.title()}") 
+    else:
+        print(f"\n{name.title()}'s fav language is {language.title()}")
