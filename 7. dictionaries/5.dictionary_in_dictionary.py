@@ -16,10 +16,10 @@ users = {'fy':
           }
 
 for user_key, user_val in users.items():
-    print(f"\n{user_key.title} info are as follows:\n")
+    print(f"\nUsername: {user_key.title()}")
     fullname = f"{user_val['first name']} {user_val['last name']}"
     location = user_val['location']
     
-    print(f"\t{fullname}")
-    print(f"\t{location}")
+    print(f"\tFull name: {fullname}")
+    print(f"\tLocation: {location}")
     
