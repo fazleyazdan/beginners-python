@@ -37,3 +37,10 @@ for i,person in enumerate(persons_list,start=1):
     print(f"\nperson {i} info are as follows:")
     for key, val in person.items():
         print(f"\n{key}:{val}")
+
+#! Make several dictionaries, where each dictionary represents a different pet. 
+#* In each dictionary, include the kind of animal and the owner’s name. 
+# Store these dictionaries in a list called pets. 
+#* Next, loop through your list and as you do, 
+# print everything you know about each pet
+        
