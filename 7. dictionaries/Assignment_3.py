@@ -38,9 +38,44 @@ for i,person in enumerate(persons_list,start=1):
     for key, val in person.items():
         print(f"\n{key}:{val}")
 
+#* enumerate() is a built-in Python function that allows you to loop over an iterable (like a list) 
+# and get both the index of each item and the item itself.
+#* persons_list is the iterable being looped over, 
+# in this case, a list containing dictionaries representing individual persons.
+#* start=1 is an optional parameter for enumerate() that specifies the starting index value. By default, enumerate() starts the index from 0, but here we're setting it to start from 1.
+#* i is the index of the current item being processed in the loop.
+#* person is the actual item itself, in this case, 
+#* a dictionary representing the details of each person.So, in each iteration of the loop:
+#* i will hold the index of the current person in the list, starting from 1 due to start=1.
+#* person will hold the dictionary representing the details of the current person.
+#* This allows you to access both the index and the item in the list at the same time within the loop.
+
+#* ============================================== #
+
 #! Make several dictionaries, where each dictionary represents a different pet. 
 #* In each dictionary, include the kind of animal and the owner’s name. 
 # Store these dictionaries in a list called pets. 
 #* Next, loop through your list and as you do, 
 # print everything you know about each pet
         
+pet1 = {  'pet': 'rabbit',
+          'owner name': 'ali',
+          'color': 'white & brown',
+        }
+
+pet2 = {  'pet': 'cat',
+          'owner name': 'muhammad haneef',
+          'color': 'white',
+        }
+
+pet3 = {  'pet': 'parrot',
+          'owner name': 'shadman',
+          'color': 'green',
+        }
+
+pets = [pet1, pet2, pet3]
+
+for i, pet in enumerate(pets, start=1):
+    print(f"\npet{i} info:")
+    for key,val in pet.items():
+        print(f"\t{key}:{val}")
