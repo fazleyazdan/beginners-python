@@ -4,6 +4,7 @@
 # Loop through your list of people. As you loop through the list, 
 # print everything you know about each person.
 
+print("===== persons task =======")
 person_1 = {'first name': 'ali',
           'last name': 'khan',
           'age': '25',
@@ -32,7 +33,7 @@ for person in persons_list:
 #! now lets make  it more dynamic. 
 #* instead of this: "persons info are as follows:" 
 #* we will write this: "person 1 info are as follows":
-print("=================================")
+print("====== dynamic person number =======")
 for i,person in enumerate(persons_list,start=1):
     print(f"\nperson {i} info are as follows:")
     for key, val in person.items():
@@ -57,7 +58,8 @@ for i,person in enumerate(persons_list,start=1):
 # Store these dictionaries in a list called pets. 
 #* Next, loop through your list and as you do, 
 # print everything you know about each pet
-        
+
+print("===== pets task task =======")
 pet1 = {  'pet': 'rabbit',
           'owner name': 'ali',
           'color': 'white & brown',
@@ -79,4 +81,13 @@ for i, pet in enumerate(pets, start=1):
     print(f"\npet{i} info:")
     for key,val in pet.items():
         print(f"\t{key}:{val}")
-        
+
+#* ============================================== #
+
+#* Make a dictionary called favorite_places. Think of three names to use as keys in the dictionary, 
+# and store one to three favorite places for each person.  
+# Loop through the dictionary, and print each person’s name and their favorite places
+print("===== Favorite place task =======")
+favorite_places = {'fazleyazdan': ['shogran', 'skardu', 'islamabad'],
+                   'ali khan': ['spin ghar', 'swat', 'peshawar'],
+                   'hameed khan': ['dir', 'islamabad', 'sawabi']}
