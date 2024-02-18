@@ -91,3 +91,8 @@ print("===== Favorite place task =======")
 favorite_places = {'fazleyazdan': ['shogran', 'skardu', 'islamabad'],
                    'ali khan': ['spin ghar', 'swat', 'peshawar'],
                    'hameed khan': ['dir', 'islamabad', 'sawabi']}
+
+for key, val in favorite_places.items():
+    print(f"\n{key.title()}'s favorite places are:")
+    for v in val:
+        print(f"\t{v.title()}")
