@@ -79,3 +79,4 @@ for i, pet in enumerate(pets, start=1):
     print(f"\npet{i} info:")
     for key,val in pet.items():
         print(f"\t{key}:{val}")
+        
