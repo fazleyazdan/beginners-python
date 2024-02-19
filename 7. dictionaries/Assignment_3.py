@@ -33,7 +33,7 @@ for person in persons_list:
 #! now lets make  it more dynamic. 
 #* instead of this: "persons info are as follows:" 
 #* we will write this: "person 1 info are as follows":
-print("====== dynamic person number =======")
+print("\n====== dynamic person number =======")
 for i,person in enumerate(persons_list,start=1):
     print(f"\nperson {i} info are as follows:")
     for key, val in person.items():
@@ -59,7 +59,7 @@ for i,person in enumerate(persons_list,start=1):
 #* Next, loop through your list and as you do, 
 # print everything you know about each pet
 
-print("===== pets task task =======")
+print("\n====== pets task task =======")
 pet1 = {  'pet': 'rabbit',
           'owner name': 'ali',
           'color': 'white & brown',
@@ -87,7 +87,7 @@ for i, pet in enumerate(pets, start=1):
 #* Make a dictionary called favorite_places. Think of three names to use as keys in the dictionary, 
 # and store one to three favorite places for each person.  
 # Loop through the dictionary, and print each person’s name and their favorite places
-print("===== Favorite place task =======")
+print("\n===== Favorite place task =======")
 favorite_places = {'fazleyazdan': ['shogran', 'skardu', 'islamabad'],
                    'ali khan': ['spin ghar', 'swat', 'peshawar'],
                    'hameed khan': ['dir', 'islamabad', 'sawabi']}
@@ -96,3 +96,18 @@ for key, val in favorite_places.items():
     print(f"\n{key.title()}'s favorite places are:")
     for v in val:
         print(f"\t{v.title()}")
+
+#! Favorite Numbers: 
+# Modify your program from Assignment so each person can have more than one favorite number. 
+# Then print each person’s name along with their favorite numbers.
+print("\n===== Favorite numbers task =======")
+
+fav_num = {'jawad': ['7', '5', '3'],
+           'kamran':['1', '9'],
+           'asad ali':['3', '7', '11'],
+           }
+
+for key, val in fav_num.items():
+        print(f"\n{key.title()}'s favorite numbers:")
+        for v in val:
+                print(f"\t{v}")
