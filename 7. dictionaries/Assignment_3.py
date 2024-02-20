@@ -60,7 +60,7 @@ for i,person in enumerate(persons_list,start=1):
 #* Next, loop through your list and as you do, 
 # print everything you know about each pet
 
-print("\n====== pets task task =======")
+print("\n====== pets task task [dictionary] =======")
 pet1 = {  'pet': 'rabbit',
           'owner name': 'ali',
           'color': 'white & brown',
@@ -89,7 +89,7 @@ for i, pet in enumerate(pets, start=1):
 # and store one to three favorite places for each person.  
 # Loop through the dictionary, and print each person’s name and their favorite places
 
-print("\n===== Favorite place task =======")
+print("\n===== Favorite place task [list in dictionary] =======")
 favorite_places = {'fazleyazdan': ['shogran', 'skardu', 'islamabad'],
                    'ali khan': ['spin ghar', 'swat', 'peshawar'],
                    'hameed khan': ['dir', 'islamabad', 'sawabi']}
@@ -103,7 +103,7 @@ for key, val in favorite_places.items():
 # Modify your program from Assignment so each person can have more than one favorite number. 
 # Then print each person’s name along with their favorite numbers.
 
-print("\n===== Favorite numbers task =======")
+print("\n===== Favorite numbers task [list in dictionary] =======")
 
 fav_num = {'jawad': ['7', '5', '3'],
            'kamran':['1', '9'],
@@ -123,7 +123,7 @@ for key, val in fav_num.items():
 # The keys for each city’s dictionary should be something like country, population, and fact. 
 #* Print the name of each city and all of the information you have stored about it.
 
-print("\n===== citites task =======")
+print("\n===== citites task [dictionary in a dictionary] =======")
 
 cities = {'mardan':     {'country': 'pakistan',
                          'population': '3 million',
