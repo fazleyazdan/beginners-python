@@ -33,6 +33,7 @@ for person in persons_list:
 #! now lets make  it more dynamic. 
 #* instead of this: "persons info are as follows:" 
 #* we will write this: "person 1 info are as follows":
+
 print("\n====== dynamic person number =======")
 for i,person in enumerate(persons_list,start=1):
     print(f"\nperson {i} info are as follows:")
@@ -87,6 +88,7 @@ for i, pet in enumerate(pets, start=1):
 #* Make a dictionary called favorite_places. Think of three names to use as keys in the dictionary, 
 # and store one to three favorite places for each person.  
 # Loop through the dictionary, and print each person’s name and their favorite places
+
 print("\n===== Favorite place task =======")
 favorite_places = {'fazleyazdan': ['shogran', 'skardu', 'islamabad'],
                    'ali khan': ['spin ghar', 'swat', 'peshawar'],
@@ -100,6 +102,7 @@ for key, val in favorite_places.items():
 #! Favorite Numbers: 
 # Modify your program from Assignment so each person can have more than one favorite number. 
 # Then print each person’s name along with their favorite numbers.
+
 print("\n===== Favorite numbers task =======")
 
 fav_num = {'jawad': ['7', '5', '3'],
@@ -111,3 +114,36 @@ for key, val in fav_num.items():
         print(f"\n{key.title()}'s favorite numbers:")
         for v in val:
                 print(f"\t{v}")
+                
+                
+
+#* Cities: Make a dictionary called cities. Use the names of three cities as keys in your dictionary. 
+# Create a dictionary of information about each city and include the country that the city is in, 
+# its approximate population, and one fact about that city. 
+# The keys for each city’s dictionary should be something like country, population, and fact. 
+#* Print the name of each city and all of the information you have stored about it.
+
+print("\n===== citites task =======")
+
+cities = {'mardan':     {'country': 'pakistan',
+                         'population': '3 million',
+                         'fact': 'the city of hospitality'
+                        },
+          
+         'islamabad':   {'country': '1 million',
+                         'population': 'pakistan',
+                         'fact': 'capital of pakistan'
+                        },
+         
+         'gaza':        {'country': 'palestine',
+                         'population': '2 million',
+                         'fact': 'bravery'
+                        }
+         
+        }
+
+for ckey, cvalue in cities.items():
+        print(f"\n{ckey.title()} info:")
+        for key,val in cvalue.items():
+                print(f"\t{key} : {val}")
+                
