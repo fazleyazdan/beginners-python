@@ -147,3 +147,8 @@ for ckey, cvalue in cities.items():
         for key,val in cvalue.items():
                 print(f"\t{key} : {val}")
                 
+                
+                
+                      
+        
+        
