@@ -9,7 +9,7 @@ print("\ni think you said : ",message)
 #* Add a space at the end of your prompts to separate the prompt from the user’s response 
 #* and to make it clear to your user where to enter their text.
 
-print("\n**** space at the end of prompt prompts\n ****")
+print("\n**** space at the end of prompt prompts ****\n")
 message = input("\nGive it a space at the end of prompt: ")
 print("\ni think you said: ",message)
 
@@ -20,9 +20,9 @@ print("\ni think you said: ",message)
 # You can assign your prompt to a variable and pass that variable to the input() function. 
 # This allows you to build your prompt over several lines, then write a clean input() statement. 
 
-print("\n**** multiple line prompts\n ****")
+print("\n**** multiple line prompts ****\n")
 prompt = "saying1 : some people wants to shoot a fish with the barrel and then they are annoyed by the splashes of the water"
-prompt += "\nopinion : i don't project my insecurities on other peoples"
+prompt += "\nif you like this saying type Y/N: "
 
 prompts = input(prompt)
 print(f"\n{prompts}")
