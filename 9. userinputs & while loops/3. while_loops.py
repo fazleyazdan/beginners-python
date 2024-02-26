@@ -9,6 +9,10 @@
 pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
 print(f"\n{pets}")
 
-for pet in pets:
-    while pet == 'cat':
+while 'cat' in pets:
+    pets.remove('cat')
+    
+print(f"\nafter removing cat from list:\t {pets}\n")
+
+
         
