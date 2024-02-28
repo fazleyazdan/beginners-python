@@ -32,7 +32,7 @@ while 'pastrami' in sandwich_orders:
     sandwich_orders.remove('pastrami')
     
 while sandwich_orders:
-    sandwich_orders.reverse()
+    sandwich_orders.reverse()               #* pop() removes items from last. reversed it because i wanna show items in order to the user 
     order = sandwich_orders.pop()
     print(f"i made your {order} sandwich")
     finished_sandwiches.append(order)
@@ -59,6 +59,6 @@ while flag:
     if response == 'no':
         flag = False
 
-print("\n*** Results of poll are as follows:\n")
+print("\n*** Results of poll are as follows ***\n")
 for key, val in dream_vacation.items():
     print(f"\t{key.title()} : {val.title()}")
