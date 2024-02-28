@@ -24,7 +24,7 @@ for finished in finished_sandwiches:
 # Add code near the beginning of your program to print a message saying the deli has run out of pastrami, 
 # and then use a while loop to remove all occurrences of 'pastrami' from sandwich_orders. 
 # Make sure no pastrami sandwiches end up in finished_sandwiches
-print("====================================================================")
+print("==================================================================")
 
 sandwich_orders = ['pastrami','chicken', 'pastrami','egg','pastrami', 'beef']
 print("\noh No! our restaurant has run out of pastrami")
