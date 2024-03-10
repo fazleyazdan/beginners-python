@@ -41,3 +41,6 @@ default_val('hunter')
 
 #* you can also override the default value in function call
 default_val('hunter', pet_type='African Eagle')
+
+#! Unmatched arguments occur when you provide fewer or more arguments than a function needs to do its work. 
+
