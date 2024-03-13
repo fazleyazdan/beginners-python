@@ -33,3 +33,5 @@ my_name= get_middle_name('fazle', 'yazdan')
 print(f"\n{my_name}")
 my_name= get_middle_name('khabib', 'nur', 'the eagle')
 print(f"\n{my_name}")
+
+#! Optional values allow functions to handle a wide range of use cases while letting function calls remain as simple as possible.
