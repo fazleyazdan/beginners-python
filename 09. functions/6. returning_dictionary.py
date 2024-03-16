@@ -23,3 +23,25 @@ def p_dict(first,last, age = None):
 
 store_dict = p_dict('fazle', 'yazdan', '25')
 print(f"\n{store_dict}")
+
+#! ============= Using a Function with a while Loop ================ #
+
+def get_formatted_name(first, last):
+    full_name = f"{first} {last}"
+    return full_name.title()
+
+#* When you call a function that returns a value, you need to provide a variable that the return value can be assigned to.
+while True:
+    print("\nEnter 'q' anytime to quit")
+    
+    first_n = input("\nplease enter first name: ")
+    if first_n == 'q':
+        break
+    
+    last_n =  input("\nplease enter last name: ")
+    if last_n == 'q':
+        break
+    
+    store_n = get_formatted_name(first_n, last_n)
+    print(f"\nHello {store_n}!")
+        
