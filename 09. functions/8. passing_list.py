@@ -58,5 +58,16 @@ show_completed_models(completed_models)
 '''If we need to print more designs later on, we can simply call Functions print_models() again.
 This example also demonstrates the idea that every function should have one specific job. 
 The first function prints each design, and the second displays the completed models. 
-This is more beneficial than using one function to do both jobs. I'''
+This is more beneficial than using one function to do both jobs. '''
 
+#! ==================== prevent function from modifying list ==================== #
+#* in the above code the 'unprinted_design' becomes empty after popping all of its items
+#* sometimes you will need to keep the original list intact and pass a copy of it to function
+
+print(f"\n***** Passing copy of list to function *****")
+
+unprinted_designs = ['phone case', 'palestine map', 'olive tree']
+completed_models = []
+print_models(unprinted_designs[:],completed_models)
+show_completed_models(completed_models)
+print(f"\nThis is the original list: {unprinted_designs}")
