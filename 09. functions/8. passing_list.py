@@ -68,6 +68,6 @@ print(f"\n***** Passing copy of list to function *****")
 
 unprinted_designs = ['phone case', 'palestine map', 'olive tree']
 completed_models = []
-print_models(unprinted_designs[:],completed_models)
+print_models(unprinted_designs[:],completed_models)              #! unprinted_designs[:] makes copy of the list
 show_completed_models(completed_models)
 print(f"\nThis is the original list: {unprinted_designs}")
