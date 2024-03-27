@@ -17,6 +17,7 @@ calling the function, print both of your lists to make sure the messages were
 moved correctly'''
 
 print("\n==================== Task 2 ====================\n")
+
 def send_messages(messages_list, sent_messages):
     while messages_list:
         pop_message = messages_list.pop()
@@ -27,6 +28,24 @@ messages_list = ['Hi ! how are you?', 'what\'s up', 'everything okay?']
 sent_messages = []
 
 send_messages(messages_list,sent_messages)
+
+print(f"\n*** send message list ***")
+show_messages(messages_list)
+print(f"\n*** sent message list ***")
+show_messages(sent_messages)
+
+
+#! ==================== Task 3 ==================== #
+'''Archived Messages: Start with your work from above Exercise. 
+Call the function send_messages() with a copy of the list of messages. 
+After calling the function, print both of your lists to show that the original list has retained its messages.'''
+
+print("\n==================== Task 3 ====================\n")
+
+messages_list = ['Hi ! how are you?', 'what\'s up', 'everything okay?']
+sent_messages = []
+
+send_messages(messages_list[:], sent_messages)
 
 print(f"\n*** send message list ***")
 show_messages(messages_list)
