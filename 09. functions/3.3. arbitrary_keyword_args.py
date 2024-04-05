@@ -12,3 +12,9 @@ def build_profile(first, last, **user_info):
 
 userInfo = build_profile('fazle', 'yazdan', location = 'Islamabad', field = 'SQA')
 print(userInfo)
+
+
+''' The double asterisks before the parameter **user_info cause Python to create 
+a dictionary called user_info containing all the extra name-value pairs the 
+function receives. Within the function, you can access the key-value pairs in 
+user_info just as you would for any dictionary.'''
