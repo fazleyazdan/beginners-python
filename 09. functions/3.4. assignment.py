@@ -20,3 +20,11 @@ make_sandwich('egg', 'salad', 'beef')
 # using your first and last names and three other key-value pairs that describe you 
 
 print("\n------------ Task 2 ------------")
+
+def build_profile(first, last, **user_info):
+    user_info['first_name'] = first
+    user_info['last_name'] = last
+    return user_info
+
+userInfo = build_profile('fazle', 'yazdan', location = 'Islamabad', field = 'SQA', favorite_food = 'dates')
+print(f"\n{userInfo}\n")
