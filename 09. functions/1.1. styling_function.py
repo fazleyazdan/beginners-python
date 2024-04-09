@@ -23,7 +23,7 @@ def function_name(parameter_0, parameter_1='default value')
 
 The same convention should be used for keyword arguments in function calls:
 e.g.
-function_name(value_0, parameter_1='value')
+function_name(value_0, parameter_1='value') 
 
 PEP 8 (https://www.python.org/dev/peps/pep-0008) recommends that you 
 limit lines of code to 79 characters so every line is visible in a reasonably 
