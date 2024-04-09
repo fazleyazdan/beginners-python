@@ -6,6 +6,7 @@
 
 def greet_user():
     print("Hello!\n")
+    
 greet_user()
 
 """def greet_user(): This is the function definition, which tells Python the name of the function and, if 
