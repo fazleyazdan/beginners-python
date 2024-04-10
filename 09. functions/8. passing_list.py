@@ -16,7 +16,7 @@ greet_users(usernames)
 
 #! ==================== Modify list without using function ==================== #
 ''' Consider a company that creates 3D printed models of designs that users submit. 
-    Designs that need to be printed are stored in a list, and after being printed they’re moved to a separate list. 
+    Designs that need to be printed are stored in a list, and after being printed they're moved to a separate list. 
     The following code does this without using functions:'''
 
 print(f"\n**** modifying list without using function ****")
