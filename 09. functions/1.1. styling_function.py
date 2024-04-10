@@ -45,7 +45,7 @@ If your program or module has more than one function, you can separate each by t
 ends and the next one begins.
 
 All import statements should be written at the beginning of a file. The 
-only exception is if you use comments at the beginning of your file to 
+only exception is if you use comments at the beginning of your file to  
 describe the overall program.
 
 '''
