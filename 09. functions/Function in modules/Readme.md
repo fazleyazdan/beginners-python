@@ -59,7 +59,7 @@ an existing name in your project, you can get unexpected results. '''
 
 '''The best approach is to import the function or functions you want, or 
 import the entire module and use the dot notation. This leads to clear code 
-that’s easy to read and understand '''
+that’s easy to read and understand'''
 
 
 
