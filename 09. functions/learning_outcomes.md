@@ -25,8 +25,16 @@ you need to modify a function’s behavior, you only have to modify one
 block of code, and your change takes effect everywhere you’ve made a call 
 to that function.
 
-Using functions makes your programs easier to read, and good function names summarize what each part of a program does. Reading a series 
-of function calls gives you a much quicker sense of what a program does 
+Using functions makes your programs easier to read, and good function names summarize what each part of a program does. 
+Reading a series of function calls gives you a much quicker sense of what a program does 
 than reading a long series of code blocks. 
+
+Functions also make your code easier to test and debug. When the bulk 
+of your program’s work is done by a set of functions, each of which has a 
+specific job, it’s much easier to test and maintain the code you’ve written. 
+You can write a separate program that calls each function and tests whether 
+each function works in all the situations it may encounter. When you do 
+this, you can be confident that your functions will work properly each time 
+you call them.
 
 -->
