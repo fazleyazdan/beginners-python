@@ -27,5 +27,3 @@ able to understand each other’s work. Your programs will make sense to the
 people you work with, allowing everyone to accomplish more. 
 
 -->
-
-
