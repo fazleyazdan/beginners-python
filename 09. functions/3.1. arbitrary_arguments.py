@@ -13,7 +13,7 @@ def make_pizza(*toppings):
 make_pizza('pepperoni')
 make_pizza('cheese', 'salad', 'chicken')
 
-#* The asterisk in the parameter name *toppings tells Python to make a tuple called toppings, 
+#* The asterisk in the parameter name *toppings tells Python to make a tuple called 'toppings', 
 #* containing all the values this function receives.
 
 
