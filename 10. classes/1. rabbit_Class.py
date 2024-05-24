@@ -11,14 +11,14 @@ class Rabbit():
     def standing(self):
         print(f"{self.name} is standing on two feet")
 
-#! Making instance of the class
-
+#! Instance of the class
 my_rabbit = Rabbit('white', 2)
 
-print(f"the name of my rabbit is {my_rabbit.name}")
+
+print(f"the name of my rabbit is {my_rabbit.name}")          #! Accessing attributes of the class
 print(f"the age of the rabbit is {my_rabbit.age}")
 
-my_rabbit.bendEar()
+my_rabbit.bendEar()                                          #! Accessing methods of class
 
 
 #* we can usually assume that a capitalized name like Dog refers to a class, 
