@@ -23,3 +23,8 @@ people you work with, allowing everyone to accomplish more .
 
 
 -->
+
+**Method:** A function that’s part of a class is a method.
+
+**The __init__() method:** is a special method that Python runs automatically whenever we create a new instance based on the class.
+
