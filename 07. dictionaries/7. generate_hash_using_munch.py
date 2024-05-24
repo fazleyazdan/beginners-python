@@ -59,7 +59,7 @@ def hash_file(file_path: str) -> Munch:
         raise FileNotFoundError(f"Error: File '{file_path}' not found.")
 
 # Example usage:
-file_path = r"C:\Users\Fazle Yazdan\Desktop\My_projects\generate_hash\test_data\Django-1.10.8-py2.py3-none-any.whl"
+file_path = r"C:\Users\Fazle Yazdan\Downloads\HTTPClient-0.3-3.jar"
 hash_value = hash_file(file_path)
 if hash_value:
     print(f"\nSHA-1 hash of the file: {hash_value.sha1}")
