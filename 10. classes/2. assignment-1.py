@@ -13,16 +13,30 @@ class Restaurant():
         self.cuisine_type = cuisine_type
         
     def describe_restaurant(self):
-        print(f"name of the restaurant is: {self.restaurant_name}")
-        print(f"cuisine type is {self.cuisine_type}")
+        print(f"Restaurant Name: {self.restaurant_name}")
+        print(f"cuisine type: {self.cuisine_type}")
         
     def open_restaurant(self):
         print(f"{self.restaurant_name} is open now")
         
 restaurant = Restaurant('Monal', 'sea food')
 
-print(f"attribute 1: {restaurant.restaurant_name}")
+print(f"\nattribute 1: {restaurant.restaurant_name}")
 print(f"attribute 2: {restaurant.cuisine_type}")
 
 restaurant.describe_restaurant()
 restaurant.open_restaurant()
+
+
+print("\n------------ Task 2 ------------\n")
+
+# Three Restaurants: Start with your class from the above Exercise. 
+# Create three different instances from the class, and call describe_restaurant() for each instance.
+
+restaurant_1 = Restaurant('Bait ul Arab', 'mandi')
+restaurant_2 = Restaurant('Savour Foods', 'savour')
+restaurant_3 = Restaurant('Khyber Shinwari', 'beef karahi')
+
+restaurant_1.describe_restaurant()
+restaurant_2.describe_restaurant()
+restaurant_3.describe_restaurant()
