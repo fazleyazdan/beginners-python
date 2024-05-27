@@ -19,14 +19,25 @@ class car:
     def read_odometer(self):
         print(f"This car has {self.odometer_reading} miles on it")
         
-    def update_odometer(self, mileage):                #! method for updating dynamic attribute
+    
+    def update_odometer(self, mileage):                #* method for updating dynamic attribute
         if mileage >= self.odometer_reading:
             self.odometer_reading = mileage
         else:
             print(f"\nyou can't rollback odometer")
         
         return mileage
-
+    
+    
+    #* Incrementing an Attribute’s Value Through a Method
+    def increment_odometer(self,mileage):
+        if mileage < 0:
+            return print("\nyou can't enter negative values")
+        else:
+            self.odometer_reading += mileage
+        
+    
+        
 my_car = car('audi', 'a4', 2024)
 print(my_car.descriptive_name())
     
@@ -60,4 +71,12 @@ my_car.update_odometer(345)
 my_car.read_odometer()
 
 
+#! Incrementing an Attribute’s Value Through a Method
+
+print('\n--------- Incrementing attribute through Method --------')
+my_car.increment_odometer(100)
+my_car.read_odometer()
+
+my_car.increment_odometer(-100)                #* checking with negative values
+my_car.read_odometer()
 
