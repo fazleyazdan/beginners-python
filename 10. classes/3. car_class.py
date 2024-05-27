@@ -20,7 +20,11 @@ class car:
         print(f"This car has {self.odometer_reading} miles on it")
         
     def update_odometer(self, mileage):                #! method for updating dynamic attribute
-        self.odometer_reading = mileage
+        if mileage >= self.odometer_reading:
+            self.odometer_reading = mileage
+        else:
+            print(f"\nyou can't rollback odometer")
+        
         return mileage
 
 my_car = car('audi', 'a4', 2024)
@@ -33,26 +37,27 @@ print(my_car.descriptive_name())
 
 my_car.read_odometer() 
 
-
-#! Modifying Attribute ValuesYou can change an attribute’s value in three ways: 
+#! Modifying Attribute Values: You can change an attribute’s value in three ways: 
 #* you can change the value directly through an instance, 
 #* set the value through a method, 
 #* or increment the value (add a certain amount to it) through a method. Let’s look at each of these approaches.
 
-#! Modifying an Attribute’s Value Directly
+#! 1 : Modifying an Attribute’s Value Directly
 
 print('\n--------- modifying attributes value directly --------')
 my_car.odometer_reading = 77
 my_car.read_odometer()
 
 
-#! Modifying an Attribute’s Value Through a Method
+#! 2 : Modifying an Attribute’s Value Through a Method
 
 ''' It can be helpful to have methods that update certain attributes for you. 
 Instead of accessing the attribute directly, you pass the new value to a 
 method that handles the updating internally '''
 
 print('\n--------- modifying attributes value through method --------')
-print(f"This car has {my_car.update_odometer(777)} miles on it")
+my_car.update_odometer(345)
+my_car.read_odometer()
+
 
 
