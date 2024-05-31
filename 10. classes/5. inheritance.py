@@ -60,7 +60,7 @@ class ElectricCar(car):
         self.battery_size = 33
         
     def describe_battery(self):
-        print(f"\nThis battery has {self.battery_size}-Kwh battery")
+        print(f"\nThis battery has {self.battery_size}-KWh battery")
 
 my_ecar = ElectricCar('nissan', 'leaf', 2024)
 print(my_ecar.descriptive_name())
@@ -86,4 +86,12 @@ the parent class a superclass and the child class a subclass. """
 any new attributes and methods necessary to differentiate the child class 
 from the parent class -- in our case we have defined battery_size attr & describe_battery() function """
 
+
+#! Overriding Methods from the Parent Class
+
+""" You can override any method from the parent class that doesn't fit what 
+you're trying to model with the child class. To do this, you define a method in 
+the child class with the same name as the method you want to override in 
+the parent class. Python will disregard the parent class method and only pay 
+attention to the method you define in the child class. """
 
