@@ -5,7 +5,7 @@ class, and the new class is the child class. The child class can inherit any
 or all of the attributes and methods of its parent class, but it’s also free to 
 define new attributes and methods of its own. '''
 
-#! he __init__() Method for a Child Class
+#! __init__() Method for a Child Class
 # When you’re writing a new class based on an existing class, 
 # you’ll often want to call the __init__() method from the parent class. 
 # This will initialize any attributes that were defined in the parent __init__() method and make 
@@ -57,11 +57,16 @@ class ElectricCar(car):
         
         ''' Calling init from the parent class, which initializes attributes'''
         super().__init__(make, model, year)
+        self.battery_size = 33
         
+    def describe_battery(self):
+        print(f"\nThis battery has {self.battery_size}-Kwh battery")
 
 my_ecar = ElectricCar('nissan', 'leaf', 2024)
-
 print(my_ecar.descriptive_name())
+
+my_ecar.describe_battery()
+
 
 """ When you create a child class, the parent class must be part of the current file 
 and must appear before the child class in the file. We then define the child class, ElectricCar . 
@@ -74,4 +79,11 @@ method from the parent class. This line tells Python to call the __init__()
 method from Car, which gives an ElectricCar instance all the attributes 
 defined in that method. The name super comes from a convention of calling 
 the parent class a superclass and the child class a subclass. """
+
+#! Defining Attributes and Methods for the Child Class
+
+""" Once you have a child class that inherits from a parent class, you can add 
+any new attributes and methods necessary to differentiate the child class 
+from the parent class -- in our case we have defined battery_size attr & describe_battery() function """
+
 
