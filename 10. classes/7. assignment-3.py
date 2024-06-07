@@ -43,6 +43,6 @@ class iceCreamStand(Restaurant):
         for flavor in self.flavors:
             print(f"\t{flavor}")
         
-ice_cream = iceCreamStand(flavors= ['chocolate', 'banana', 'nutty'])
+ice_cream = iceCreamStand(flavors= ['chocolate', 'banana', 'pistachio'])
             
 ice_cream.display_flavors()    
