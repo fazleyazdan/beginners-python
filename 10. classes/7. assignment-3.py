@@ -46,3 +46,51 @@ class iceCreamStand(Restaurant):
 ice_cream = iceCreamStand(flavors= ['chocolate', 'banana', 'pistachio'])
             
 ice_cream.display_flavors()    
+
+
+print("\n------------ Task 2 ------------\n")
+
+# Admin: An administrator is a special kind of user. 
+# Write a class called Admin that inherits from the User class you wrote in assignment_2-2 
+# Add an attribute, privileges, that stores a list of strings like "can add post", 
+# "can delete post", "can ban user", and so on. 
+# Write a method called show_privileges() that lists the administrator’s set of privileges. 
+# Create an instance of Admin, and call your method.
+
+class User():
+    
+    def __init__(self,first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.login_attempts = 0
+        
+    def describe_user(self, age, profession):
+        print(f"\tUser name: {self.first_name + ' ' + self.last_name}")
+        print(f"\tUser age: {age}")
+        print(f"\tUser profession: {profession}")
+        
+    def greet_user(self):
+        print(f"\nHello {self.first_name + ' ' + self.last_name}! Welcome to beginners Python")
+        
+    def increment_login_attempts(self):
+        self.login_attempts += 1
+        
+    def reset_login_attempts(self):
+        self.login_attempts = 0
+
+
+class Admin(User):
+    
+    def __init__(self, privileges):
+        self.privileges = privileges
+        
+    def show_privileges(self):
+        print(f"\nFollowing are Admins privileges:")
+        for privilege in self.privileges:
+            print(f"\t{privilege}")
+            
+admin = Admin(['can add post', 'can add user'])
+admin.show_privileges()
+
+
+print("\n------------ Task 3 ------------\n")
