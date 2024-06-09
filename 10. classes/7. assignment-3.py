@@ -82,7 +82,7 @@ class User():
 class Admin(User):
     
     def __init__(self, privileges):
-        # self.privileges = privileges                                      #! uncomment this & the instances 
+        # self.privileges = privileges                                      #! uncomment this & the instances.  
         self.privileges_obj = Privileges(privileges)                        #! Privileges class Obj
     
         
