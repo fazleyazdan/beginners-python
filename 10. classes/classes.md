@@ -29,3 +29,8 @@ people you work with, allowing everyone to accomplish more .
 **The __init__() method:** is a special method that Python runs automatically whenever we create a new instance based on the class.
 
 
+### Importing classes:
+
+* As you add more functionality to your classes, your files can get long, even 
+when you use inheritance and composition properly. To help, Python lets you store classes in modules and then import 
+the classes you need into your main program.
