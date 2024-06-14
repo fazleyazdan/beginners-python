@@ -22,3 +22,4 @@ print(prize_numbers)
 """ In Python, the underscore (_) is often used as a throwaway variable. 
 It is a convention used to indicate that the variable is temporary and its value is not important or will not be used.
 This is particularly useful in loops where the loop variable itself is not needed inside the loop body."""
+
