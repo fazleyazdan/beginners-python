@@ -35,4 +35,15 @@ class Car:
             return print("\nyou can't enter negative values")
         else:
             self.odometer_reading += mileage
+    
+
+class ElectricCar(Car):
+    
+    def __init__(self, make, model, year):
         
+        ''' Calling init from the parent class, which initializes attributes'''
+        super().__init__(make, model, year)
+        self.battery_size = 33
+        
+    def describe_battery(self):
+        print(f"This battery has {self.battery_size}-KWh battery")
