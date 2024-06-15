@@ -20,16 +20,15 @@ ten_die = Die(10)
 twenty_die = Die(20)
 
 print("rolling six sided die 10 times:")
-for count in range(1,11):
+for _ in range(1,11):
     six_die.roll_die()
-    count += count
 
 print("\nrolling 10 sided die 10 times:")
-for count in range(1,11):
+for _ in range(1,11):
     ten_die.roll_die()
-    count += count
     
 print("\nrolling 20 sided die 10 times:")
-for count in range(1,11):
+for _ in range(1,11):
     twenty_die.roll_die()
-    count += count
+    
+    
