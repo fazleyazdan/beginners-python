@@ -1,10 +1,10 @@
 import requests
 
 # Define the necessary variables
-GITHUB_TOKEN = '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'
-OWNER = 'fazleyazdan7'
-REPO = 'github-api'
-WORKFLOW_ID = 'main.yml'  # or you can use the workflow ID
+GITHUB_TOKEN = 'change the token'
+OWNER = 'SeQuenX'
+REPO = 'cv-service-internal'
+WORKFLOW_ID = 'trigger_kb_update.yml'  # or you can use the workflow ID
 
 # Set up the API endpoint to get the workflow information
 url = f"https://api.github.com/repos/{OWNER}/{REPO}/actions/workflows/{WORKFLOW_ID}"
@@ -31,7 +31,11 @@ trigger_url = f"https://api.github.com/repos/{OWNER}/{REPO}/actions/workflows/{W
 
 # Define the payload with the branch or tag to run the workflow on
 data = {
-    "ref": "main"  # or the branch/tag you want to run the workflow on
+    "ref": "main",
+    "inputs": {
+        "environment": "acc",  # Set the environment you want to target
+        "registry_name": "pypi"  # Set the registry name you want to use
+    }
 }
 
 # Make the POST request to trigger the workflow
