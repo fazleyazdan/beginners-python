@@ -2,7 +2,7 @@ import requests
 
 # Define the necessary variables
 GITHUB_TOKEN = 'change the token'
-OWNER = 'SeQuenX'
+OWNER = 'sequenxx'
 REPO = 'cv-service-internal'
 WORKFLOW_ID = 'trigger_kb_update.yml'  # or you can use the workflow ID
 
