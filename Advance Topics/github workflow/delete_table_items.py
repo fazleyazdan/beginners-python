@@ -26,7 +26,7 @@ def delete_all_items_from_table(table_name):
         delete_item_from_table(table_name, key)
 
 # Example usage
-table_name = 'license-acc'
+table_name = 'package-acc'
 # Define the primary key(s) of your table here
-primary_keys = ['id']  # Replace with your actual primary key names
+primary_keys = ['id','name']  # Replace with your actual primary key names
 delete_all_items_from_table(table_name)
