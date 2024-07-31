@@ -15,7 +15,7 @@ def test_search_pkg_by_name():
 
     # Check if the response contains the package name
     package_names = [item['name'] for item in list_items if 'name' in item]
-    assert PACKAGE_NAME in package_names, f"Package name '{PACKAGE_NAME}' not found in response items"
+    assert PACKAGE_NAME in package_names, f"Package name '{PACKAGE_NAME}' not found in response items" 
 
 if __name__ == "__main__":
     test_search_pkg_by_name()
