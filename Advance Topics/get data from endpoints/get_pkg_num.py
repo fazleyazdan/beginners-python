@@ -1,9 +1,8 @@
-import boto3
+from amazondax import AmazonDaxClient
 
-dynamodb = boto3.resource('dynamodb', region_name='eu-central-1')
+dax = AmazonDaxClient(region_name='eu-central-1')
 
-def count_packages_by_language_gsi_resource(table_name, index_name, language):
-    table = dynamodb.Table(table_name)
+def count_packages_by_language_dax(table_name, index_name, language):
     count = 0
     last_evaluated_key = None
 
@@ -18,7 +17,7 @@ def count_packages_by_language_gsi_resource(table_name, index_name, language):
         if last_evaluated_key:
             kwargs['ExclusiveStartKey'] = last_evaluated_key
         
-        response = table.query(**kwargs)
+        response = dax.query(**kwargs)
         count += response.get('Count', 0)
         last_evaluated_key = response.get('LastEvaluatedKey')
 
@@ -27,10 +26,9 @@ def count_packages_by_language_gsi_resource(table_name, index_name, language):
     
     return count
 
-# Example usage
 if __name__ == "__main__":
-    table_name = 'package-prd'
-    index_name = 'id'  # Replace with your GSI name for 'language'
-    language = 'python'  # Replace with the language you want to query
-    count = count_packages_by_language_gsi_resource(table_name, index_name, language)
+    table_name = 'package-dev'
+    index_name = 'id'
+    language = 'python'
+    count = count_packages_by_language_dax(table_name, index_name, language)
     print(f"Total number of packages with language '{language}': {count}")
