@@ -1,0 +1,55 @@
+{
+    "total_count": 1,
+    "items": [
+      {
+        "vulnerability_details": {
+          "credits": [
+            {
+              "name": "cybersecurity@se.com",
+              "contact": [
+                "https://www.se.com/ww/en/download/document/SEVD-2020-287-04/"
+              ],
+              "type": "OTHER"
+            }
+          ],
+          "database_specific": {
+            "source": "nvd"
+          },
+          "details": "",
+          "id": "CVE-2020-7547",
+          "modified": "2022-09-03T03:43:47.213",
+          "published": "2020-12-01T15:15:12.657",
+          "schema_version": "1.6.3",
+          "severity": [
+            {
+              "type": "CVSS_V3",
+              "score": 8.8,
+              "cust_severity_label": "HIGH"
+            }
+          ],
+          "summary": "A CWE-284: Improper Access Control vulnerability exists in EcoStruxureª and SmartStruxureª Power Monitoring and SCADA Software (see security notification for version information) that could allow a user the ability to perform actions via the web interface at a higher privilege level.",
+          "withdrawn": ""
+        },
+        "affected_package_details": {
+          "cpe": "cpe:2.3:a:schneider-electric:powerscada_expert_with_advanced_reporting_and_dashboards:8.0:*:*:*:*:*:*:*",
+          "database_specific": {},
+          "ecosystem": "schneider-electric",
+          "ecosystem_specific": {},
+          "id": "pkg:generic/schneider-electric/powerscada_expert_with_advanced_reporting_and_dashboards@8.0",
+          "name": "powerscada_expert_with_advanced_reporting_and_dashboards",
+          "parent_vulnerability_id": "CVE-2020-7547",
+          "ranges": [
+            {
+              "type": "ECOSYSTEM",
+              "events": []
+            }
+          ],
+          "severity": [],
+          "versions": [
+            "8.0"
+          ]
+        }
+      }
+    ],
+    "extra_meta_info": {}
+  }
