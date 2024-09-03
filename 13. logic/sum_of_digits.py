@@ -13,5 +13,3 @@ def sum_of_digits(num):
 print(sum_of_digits(43))       # Output 7
 
     
-
-
