@@ -12,8 +12,8 @@ def count_vowels(word):
     for i in range(len(word)):
         if word[i] in vowels:                   # loop through the vowels
             vowels_count += 1                   
-        else:
-            continue
+        # else:                                 # it is better not to write else-continue statement....                 
+            # continue                          # because if there is no 'else' block, by default only if is entertained. 
     return vowels_count
 
 print(count_vowels('aeiou'))
