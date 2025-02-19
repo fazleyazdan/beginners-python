@@ -24,9 +24,9 @@ def count_packages_by_language_paginator(table_name, language):
 # Example usage
 if __name__ == "__main__":
     table_name = 'package-prd'
-    language = 'Java'  # Replace with the language you want to query
+    language = 'julia'  # Replace with the language you want to query
     count = count_packages_by_language_paginator(table_name, language)
     print(f"Total number of packages with language '{language}': {count}")
 
 
-# ! working but too much time taking
+# ! working : the speed is dependant on the size of the database as well as the internet connection
