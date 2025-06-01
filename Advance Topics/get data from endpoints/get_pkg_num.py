@@ -27,8 +27,8 @@ def count_packages_by_language_dax(table_name, index_name, language):
     return count
 
 if __name__ == "__main__":
-    table_name = 'package-dev'
+    table_name = 'package-prd'
     index_name = 'id'
-    language = 'c++'
+    language = 'rust'
     count = count_packages_by_language_dax(table_name, index_name, language)
     print(f"Total number of packages with language '{language}': {count}")
