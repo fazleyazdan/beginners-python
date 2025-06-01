@@ -27,7 +27,7 @@ def get_last_five_packages(table_name, language):
                     recent_packages.append((package_name, created_at))
 
                     # Sort by created_at in descending order and keep only the last 5 items
-                    recent_packages = sorted(recent_packages, key=lambda x: x[1], reverse=True)[:20]
+                    recent_packages = sorted(recent_packages, key=lambda x: x[1], reverse=True)[:5]
 
     except ClientError as e:
         raise Exception(f"Error scanning table with paginator: {e}")
