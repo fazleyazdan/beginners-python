@@ -14,6 +14,6 @@ display_message()
 #* include a book title as an argument in the function call.
 
 def favorite_book(title):
-    print(f"\none of my favorite book is {title}.")
+    print(f"\n one of my favorite book is {title}.")
     
 favorite_book('world of devil & jins')
