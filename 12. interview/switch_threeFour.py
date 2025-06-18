@@ -24,5 +24,19 @@ print(switch_three_four(4))  # Output: 3
 
 
 
+# When you use [x] after the dictionary, you are accessing the value associated with the key x in that dictionary.
 
+#* Example
+# If x is 3, {3: 4, 4: 3}[3] will return 4 because the key 3 maps to the value 4 in the dictionary.
+# If x is 4, {3: 4, 4: 3}[4] will return 3 because the key 4 maps to the value 3 in the dictionary.
+
+#* Why Use [x]?
+# The [x] syntax is how you access values in a dictionary in Python. Here's how it works step-by-step:
+
+#* Dictionary Creation: {3: 4, 4: 3}
+
+# This is a dictionary with keys 3 and 4.
+# Accessing a Value: {3: 4, 4: 3}[x]
+
+#* When you place [x] after the dictionary, you're asking for the value associated with the key x.
 
