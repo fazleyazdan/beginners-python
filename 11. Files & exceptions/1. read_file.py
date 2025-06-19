@@ -20,7 +20,7 @@ that contains pi to 30 decimal places, with 10 decimal places per line:
 
 from pathlib import Path
 
-path = Path("pi_digits.txt")         
+path = Path("pi_digits.txt")         # since the file exists in the same path, file name is all you need to pass  
 content = path.read_text()
 print(content)
 
