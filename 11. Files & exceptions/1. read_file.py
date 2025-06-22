@@ -25,6 +25,13 @@ content = path.read_text()
 print(content)
 
 """ 
+ To work with the contents of a file, we need to tell Python the path to 
+the file. A path is the exact location of a file or folder on a system. Python 
+provides a module called pathlib that makes it easier to work with files and 
+directories,
 
+There's a lot you can do with a Path object that points to a file. 
+For example, you can check that the file exists before working with it, 
+read the file's contents, or write new data to the file.
 
 """
