@@ -17,13 +17,3 @@ Virtual DOM (V-DOM)
 What It Is: 
 The Virtual DOM is an abstraction of the DOM, used primarily in modern front-end frameworks like React. 
 It is a lightweight copy of the actual DOM that exists in memory.
-
-How It Works: 
-When changes are made in a web application, instead of updating the real DOM right away, the Virtual DOM is updated first. 
-Then, the framework compares the Virtual DOM with the actual DOM 
-(this process is called "reconciliation") to figure out the minimal set of changes that need to be made to the real DOM. 
-These updates are then applied in a more efficient way.
-
-Performance: 
-The Virtual DOM improves performance by minimizing direct interactions with the real DOM. 
-It reduces the number of re-renders and updates, making the process faster and more efficient, especially in complex applications."""
