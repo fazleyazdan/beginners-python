@@ -71,4 +71,12 @@ my_car.update_odometer(345)
 my_car.read_odometer()
 
 
+#! Incrementing an Attribute’s Value Through a Method
+
+print('\n--------- Incrementing attribute through Method --------')
+my_car.increment_odometer(100)
+my_car.read_odometer()
+
+my_car.increment_odometer(-100)                #* checking with negative values
+my_car.read_odometer()
 
