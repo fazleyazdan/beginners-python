@@ -44,3 +44,12 @@ print(f"\n{restaurant.restaurant_name} has served {restaurant.number_served} cus
 restaurant.number_served = 7
 print(f"\n{restaurant.restaurant_name} has served {restaurant.number_served} customers") 
        
+#! num of customer served with a method
+
+restaurant.set_number_served(8)
+print(f"\nTotal number of served customers by {restaurant.restaurant_name} : {restaurant.number_served}")
+
+#! Incrementing number of served Customers
+
+restaurant.increment_number_served(-5)
+print(f"\nTotal number of served customers after Increment: {restaurant.number_served}")
