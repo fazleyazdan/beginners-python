@@ -22,5 +22,5 @@ players = ['fazle yazdan', 'jawad', 'arsalan', 'zakwan', 'ali']
 print(choice(players))
 
 
-#! he random module shouldn’t be used when building security-related applications, 
+#! random module shouldn’t be used when building security-related applications, 
 #! but it works well for many fun and interesting projects.
