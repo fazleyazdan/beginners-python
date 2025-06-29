@@ -1,3 +1,8 @@
+# Ice Cream Stand: An ice cream stand is a specific kind of restaurant. 
+# Write a class called IceCreamStand that inherits from the Restaurant class you wrote in assignment_2-1. 
+# Add an attribute called flavors that stores a list of ice cream flavors. 
+# Write a method that displays these flavors. 
+# Create an instance of IceCreamStand, and call this method.
 
 class Restaurant():
     
