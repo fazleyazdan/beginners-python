@@ -103,12 +103,12 @@ my_ecar.battery.get_range()
 
 """ In the ElectricCar class, we now add an attribute called self.battery 3. 
 This line tells Python to create a new instance of Battery (with a default size 
-of 40, because we’re not specifying a value) and assign that instance to the 
+of 40, because we're not specifying a value) and assign that instance to the 
 attribute self.battery. This will happen every time the __init__() method 
 is called; any ElectricCar instance will now have a Battery instance created 
 automatically.
 We create an electric car and assign it to the variable my_leaf. When 
-we want to describe the battery, we need to work through the car’s battery
+we want to describe the battery, we need to work through the car's battery
 attribute
 """
 
