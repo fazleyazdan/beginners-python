@@ -18,17 +18,3 @@
 # Since the object is mutable, any changes made to the object within the function will affect the original object outside the function. 
 # This behavior is similar to "pass by reference" in other languages because the original object can be modified.
 
-#* So, mutable objects in Python behave as if they are "passed by reference" because changes to the object within a function affect the original object. 
-# Examples of mutable objects include lists, dictionaries, and sets.
-
-#* Here’s a quick example to illustrate:
-    
-def modify_list(a_list):
-    a_list.append(4)
-
-my_list = [1, 2, 3]
-modify_list(my_list)
-print(my_list)  # Output: [1, 2, 3, 4]
-
-# In this example, my_list is modified by the modify_list function, 
-# demonstrating how mutable objects behave similarly to "pass by reference."
