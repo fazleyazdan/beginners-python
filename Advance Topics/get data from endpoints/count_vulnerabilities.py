@@ -18,7 +18,7 @@ def count_packages_with_source_osv_in_string(table_name):
                 if db_field:
                     try:
                         db_data = json.loads(db_field)
-                        if db_data.get('source') == 'osv':
+                        if db_data.get('source') == 'nvd':
                             count += 1
                     except json.JSONDecodeError:
                         continue  # Ignore malformed JSON
@@ -31,4 +31,4 @@ def count_packages_with_source_osv_in_string(table_name):
 if __name__ == "__main__":
     table_name = 'vulnerability-prd'
     count = count_packages_with_source_osv_in_string(table_name)
-    print(f"Total packages with database_specific.source = 'osv': {count}")
+    print(f"Total packages with database_specific.source = 'nvd': {count}")
