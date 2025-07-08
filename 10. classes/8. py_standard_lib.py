@@ -6,3 +6,7 @@ have written. You can use any function or class in the standard library by
 including a simple import statement at the top of your file. Let's look at one 
 module, random, which can be useful in modeling many real-world situations. """
 
+#* One interesting function from the random module is randint(). 
+# This function takes two integer arguments and returns a randomly selected integer between (and including) those numbers.
+# Here’s how to generate a random number between 1 and 6:
+
