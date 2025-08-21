@@ -38,4 +38,45 @@ class car:
         
     
         
+my_car = car('audi', 'a4', 2024)
+print(my_car.descriptive_name())
+    
+
+#! Setting a Default Value for an Attribute   
+#* for default value, we don't need to pass its value when creating instance. as it has a default value 
+#* in the above 'car class' an attribute 'odometer_reading' has a value of 0
+
+my_car.read_odometer() 
+
+#! Modifying Attribute Values: You can change an attribute’s value in three ways: 
+#* you can change the value directly through an instance, 
+#* set the value through a method, 
+#* or increment the value (add a certain amount to it) through a method. Let’s look at each of these approaches.
+
+#! 1 : Modifying an Attribute’s Value Directly
+
+print('\n--------- modifying attributes value directly --------')
+my_car.odometer_reading = 77
+my_car.read_odometer()
+
+
+#! 2 : Modifying an Attribute’s Value Through a Method
+
+''' It can be helpful to have methods that update certain attributes for you. 
+Instead of accessing the attribute directly, you pass the new value to a 
+method that handles the updating internally '''
+
+print('\n--------- modifying attributes value through method --------')
+my_car.update_odometer(345)
+my_car.read_odometer()
+
+
+#! Incrementing an Attribute’s Value Through a Method
+
+print('\n--------- Incrementing attribute through Method --------')
+my_car.increment_odometer(100)
+my_car.read_odometer()
+
+my_car.increment_odometer(-100)                #* checking with negative values
+my_car.read_odometer()
 
