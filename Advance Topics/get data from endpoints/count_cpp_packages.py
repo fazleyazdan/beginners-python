@@ -25,4 +25,4 @@ def count_packages_with_registry_vcpkg(table_name):
 if __name__ == "__main__":
     table_name = 'package-prd'
     count = count_packages_with_registry_vcpkg(table_name)
-    print(f"Total number of packages with registry 'vcpkg': {count}")
+    print(f"Total number of packages with registry 'conan': {count}")
