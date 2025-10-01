@@ -14,3 +14,12 @@ else:
 #* ============================================== #
 
 print("\n**** Approach 2 ****\n")
+
+height = input("how tall are you? ")
+height = int(height)
+
+if height >= 48:
+    print("You can ride a roller coster")
+else:
+    print("You can't ride a roller coster")
+    
