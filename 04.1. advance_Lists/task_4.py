@@ -26,3 +26,10 @@ print("adding a million :",sum(million))
 odd_number = list(range(1,20,2))
 print("odd number from 1 to 20 :", odd_number)
 
+# Make a list of the multiples of 3, from 3 to 30. Use a for loop to 
+# print the numbers in your list.
+
+multiple_3 = [value*3 for value in range(1,11)]            # list comprehension
+for multiple in multiple_3:
+    print(multiple)
+    
