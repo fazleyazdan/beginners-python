@@ -36,4 +36,15 @@ print(usernames)
 # If it has, print a message that the person will need to enter a new username. 
 # If a username has not been used, print a message saying that the username is available.
 
+current_users = ['ANEES', 'kamran', 'shadman', 'admin', 'abdullah']
+
+new_users = ['shahid' , 'ANees', 'ABDULLAH', 'usama', 'ahtisham']
+
+for user in new_users:
+    if user in current_users:
+        print(f"the username ({user}) already exist please enter a new username")
+    else:
+        print(f"this username ({user}) is available")
+
+
 
