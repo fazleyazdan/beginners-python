@@ -29,3 +29,11 @@ def scan_table(table_name):
     return items    
 
 
+#! Function for Deleting an item from the table
+def delete_item_from_table(table_name, keys):
+        table = dynamodb_resource.Table(table_name)
+        with table.batch_writer() as batch:
+            for key in keys:
+                batch.delete_item(Key=key)
+
+
