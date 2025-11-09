@@ -59,3 +59,10 @@ def check_table_and_empty_if_needed(table_name, primary_keys):
            return f"items deleted on second attempt"
 
 
+#! Test case to check the table is empty or not
+def test_table_empty_or_emptied():
+    table_name = 'package-acc'
+    primary_keys = ['id', 'name'] 
+    print(check_table_and_empty_if_needed(table_name, primary_keys))
+
+test_table_empty_or_emptied()
