@@ -21,3 +21,11 @@ def get_secret():
 
 token = get_secret()
 
+#! Function for storing items from the table
+def scan_table(table_name):
+    table = dynamodb_resource.Table(table_name)
+    response = table.scan()
+    items = response.get('Items', [])
+    return items    
+
+
