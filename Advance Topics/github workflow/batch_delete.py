@@ -7,3 +7,17 @@ import time
 dynamodb = boto3.client('dynamodb', region_name='eu-central-1')
 dynamodb_resource = boto3.resource('dynamodb', region_name='eu-central-1')
 
+#! Function for fetching the Token from AWS
+def get_secret():
+    secret_name = "github-admin-token" 
+
+    # Create a Secrets Manager client
+    client = boto3.client("secretsmanager")
+
+    # Retrieve the secret
+    get_secret_value_response = client.get_secret_value(SecretId=secret_name)
+    secret_val = Munch(get_secret_value_response)
+    return secret_val.SecretString    
+
+token = get_secret()
+
