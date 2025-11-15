@@ -45,3 +45,24 @@ def delete_all_items_from_table(table_name, primary_keys):
         delete_item_from_table(table_name, keys)
         items = scan_table(table_name)
 
+
+#! Function to check whether the table is empty or contains some data
+def check_table_and_empty_if_needed(table_name, primary_keys):
+    items = scan_table(table_name)
+    if not items:
+        return f"table already empty"
+    else:
+        delete_all_items_from_table(table_name, primary_keys)
+        if len(items) > 0:
+            return f"items not deleted, deleting again"
+        else:
+           return f"items deleted on second attempt"
+
+
+#! Test case to check the table is empty or not
+def test_table_empty_or_emptied():
+    table_name = 'package-acc'
+    primary_keys = ['id', 'name'] 
+    print(check_table_and_empty_if_needed(table_name, primary_keys))
+
+test_table_empty_or_emptied()
