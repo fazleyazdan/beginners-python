@@ -35,3 +35,13 @@ def delete_item_from_table(table_name, keys):
         with table.batch_writer() as batch:
             for key in keys:
                 batch.delete_item(Key=key)
+
+
+#! Function for deleting all items from the table
+def delete_all_items_from_table(table_name, primary_keys):
+    items = scan_table(table_name)
+    while items:
+        keys = [{k: v for k, v in item.items() if k in primary_keys} for item in items]
+        delete_item_from_table(table_name, keys)
+        items = scan_table(table_name)
+
