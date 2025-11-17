@@ -20,3 +20,10 @@ def check_table_and_get_items(table_name, limit=2):
         print(f"Error scanning table: {e}")
         return None
 
+# Example usage
+table_name = 'package-dev'
+items = check_table_and_get_items(table_name)
+
+if items:
+    for item in items:
+        print(item)
