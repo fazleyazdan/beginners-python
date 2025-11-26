@@ -5,5 +5,15 @@
 # You can then store information about each user by using a dictionary 
 #* as the value associated with their username.
 
+users = {'fy':
+         {'first name': 'fazle',
+          'last name': 'yazdan',
+          'location': 'islamabad'},
+          'jk': 
+          {'first name': 'jawad',
+           'last name': 'khan',
+           'location': 'kpk'}
+          }
+
 
     
