@@ -3,3 +3,14 @@
 # Write a loop that keeps pulling numbers until your ticket wins. 
 # Print a message reporting how many times the loop had to run to give you a winning ticket.
 
+from random import choice
+
+lottery = [1,2,3,4,5,6,7,8,9,10,'a', 'b', 'c', 'd', 'e', 'f']
+
+prize_numbers = []
+lucky_num = choice(lottery)
+prize_numbers.append(lucky_num)
+my_ticket = 7
+
+count = 0
+
