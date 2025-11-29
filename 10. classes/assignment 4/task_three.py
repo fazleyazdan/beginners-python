@@ -14,3 +14,14 @@ my_ticket = 7
 
 count = 0
 
+while my_ticket not in prize_numbers:
+    
+    count += 1
+    lucky_num = choice(lottery)
+    prize_numbers.append(lucky_num)    
+    if my_ticket in prize_numbers:
+        count += 1
+        break   
+
+print(f"Congrats! it took {count} times to win the ticket")
+print(prize_numbers)
