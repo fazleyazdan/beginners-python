@@ -58,3 +58,12 @@ def hash_file(file_path: str) -> Munch:
     except FileNotFoundError:
         raise FileNotFoundError(f"Error: File '{file_path}' not found.")
 
+# Example usage:
+file_path = r"C:\Users\Fazle Yazdan\Downloads\HTTPClient-0.3-3.jar"
+hash_value = hash_file(file_path)
+if hash_value:
+    print(f"\nSHA-1 hash of the file: {hash_value.sha1}")
+    print(f"\nSHA-256 hash of the file: {hash_value.sha256}")
+    print(f"\nMD5 hash of the file: {hash_value.md5}")
+    print(f"\nBlake2b-256 hash of the file: {hash_value.blake2b_256}")
+    print(hash_value)
