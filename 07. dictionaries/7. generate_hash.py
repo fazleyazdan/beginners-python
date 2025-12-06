@@ -16,3 +16,45 @@ If they don't match, it means the file has been altered in some way.
 Hash cannot be reversed to retrieve the original data.
 '''
 
+import hashlib
+from munch import Munch
+
+def hash_file(file_path: str) -> Munch:
+    
+    #* the arrow in function definition shows that its return type is 'munch'
+    #* file_path: str : means that file_path should be in string format
+    
+    """
+    Generate hashes of a file using multiple hash algorithms.
+
+    Args:
+        file_path (str): Path to the file.
+
+    Returns:
+        Munch: A Munch object containing various hash values of the file.
+    """
+    try:
+        with open(file_path, "rb") as file:
+            sha1_hash = hashlib.sha1()
+            sha256_hash = hashlib.sha256()
+            md5_hash = hashlib.md5()
+            blake2b_hash = hashlib.blake2b(digest_size=32)
+            while True:
+                data = file.read(65536)  # Read file in chunks of 64KB
+                if not data:
+                    break
+                sha1_hash.update(data)
+                sha256_hash.update(data)
+                md5_hash.update(data)
+                blake2b_hash.update(data)
+            all_hashes = Munch(
+                sha1=sha1_hash.hexdigest(),
+                sha256=sha256_hash.hexdigest(),
+                md5=md5_hash.hexdigest(),
+                blake2b_256=blake2b_hash.hexdigest()
+            )
+        return all_hashes
+    
+    except FileNotFoundError:
+        raise FileNotFoundError(f"Error: File '{file_path}' not found.")
+
