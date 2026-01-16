@@ -1,5 +1,5 @@
 
-myName = "fazle yazdan"
+myName = "fazle yazdan" 
 
 print(f"my name is : {myName}")
       
