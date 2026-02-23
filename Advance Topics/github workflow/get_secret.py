@@ -18,4 +18,4 @@ def get_secret():
     Munch(get_secret_value_response)
 
 secret_val = get_secret()
-print(secret_val.SecretString)
+print("Secret retrieved successfully.")
