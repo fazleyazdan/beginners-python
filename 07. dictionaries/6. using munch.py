@@ -14,4 +14,11 @@ data = Munch()
 data.name = "Khalid bin Waleed"
 data.age = 30
 
+# Accessing values using dot notation
+print(data.name)  # Output: Khalid bin Waleed
+print(data.age)   # Output: 30
+
+# You can still access values using dictionary syntax
+print(data['name'])  # Output: Khalid bin Waleed
+print(data['age'])   # Output: 30
 
