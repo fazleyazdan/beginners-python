@@ -7,4 +7,11 @@
 
 from munch import Munch
 
+# Creating a Munch object
+data = Munch()
+
+# Adding key-value pairs
+data.name = "Khalid bin Waleed"
+data.age = 30
+
 
