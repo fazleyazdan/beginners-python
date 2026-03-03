@@ -1,0 +1,41 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# Black Duck Security Action allows you to integrate Static Analysis Security Testing (SAST) and Software Composition Analysis (SCA) into your CI/CD pipelines.
+# For more information about configuring your workflow,
+# read our documentation at https://github.com/blackduck-inc/black-duck-security-scan
+
+name: CI Black Duck security scan
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  schedule:
+    - cron: '44 13 * * 3'
+
+jobs:
+  blackduck-sca-scan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      security-events: write
+      actions: read
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Black Duck SCA scan
+        uses: blackduck-inc/black-duck-security-scan@805cbd09e806b01907bbea0f990723c2bb85abe9
+        with:
+          blackducksca_url: ${{ vars.BLACKDUCKSCA_URL }}
+          blackducksca_token: ${{ secrets.BLACKDUCKSCA_TOKEN }}
+          srm_url: ${{ vars.SRM_URL }}
+          srm_apikey: ${{ secrets.SRM_API_KEY }}
+          srm_assessment_types: "SCA,SAST"
+
