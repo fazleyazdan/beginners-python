@@ -28,3 +28,14 @@ class User():
     def reset_login_attempts(self):
         self.login_attempts = 0
         
+    
+user = User('fazle', 'yazdan')
+
+user.increment_login_attempts()
+user.increment_login_attempts()
+user.increment_login_attempts()
+
+print(f"\nLogin attempts by the user are: {user.login_attempts}")
+
+user.reset_login_attempts()
+print(f"\nLogin attempts by the user after resetting: {user.login_attempts}")
