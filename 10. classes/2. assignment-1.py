@@ -50,3 +50,30 @@ print("\n------------ Task 3 ------------\n")
 # Make another method called greet_user() that prints a personalized greeting to the user.
 # Create several instances representing different users, and call both methods for each user.
 
+class User():
+    
+    def __init__(self,first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+        
+    def describe_user(self, age, profession):
+        print(f"\tUser name: {self.first_name + ' ' + self.last_name}")
+        print(f"\tUser age: {age}")
+        print(f"\tUser profession: {profession}")
+        
+    def greet_user(self):
+        print(f"\nHello {self.first_name + ' ' + self.last_name}! Welcome to beginners Python")
+        
+        
+person = User('ali', 'khan')
+person.describe_user(20, 'Rescuer')
+
+person_1 = User('fazle', 'yazdan')
+person_1.greet_user()
+person_1.describe_user(25, 'Software Tester')
+
+person_2 = User('jawad', 'khan')
+person_2.greet_user()
+person_2.describe_user(24, 'Quality Assurance')
+
+
