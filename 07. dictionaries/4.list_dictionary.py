@@ -14,3 +14,14 @@ for content in list_dictionary['specs']:
 # the value associated with each peeson would be a list of languages rather than a single language. 
 #* Inside the dictionary’s for loop, we use another for loop to run through the list of languages associated with each person:
 
+fav_languages = {'fazleyazdn': ['python', 'JS'],
+                 'jawad': ['c', 'rust'],
+                 'Hameed': ['JS'],
+                 'shadman': ['dot net', 'c#'],
+                 'ali': ['ruby']}
+
+for name,languages in fav_languages.items():
+    print(f"\n{name.title()}'s fav lamnguages are:")
+    for language in languages:
+        print(f"\t{language.title()}") 
+        
