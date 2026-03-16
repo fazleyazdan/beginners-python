@@ -8,3 +8,9 @@ for content in list_dictionary['specs']:
     print(f"\t{content}")                              #! \t for indentation
     
 
+#* You can nest a list inside a dictionary anytime you want more than one value to be associated with a single key
+# In the earlier example of favorite programming languages, if we were to store each person’s responses in a list, 
+#* people could choose more than one favorite language. Dictionaries   When we loop through the dictionary, 
+# the value associated with each peeson would be a list of languages rather than a single language. 
+#* Inside the dictionary’s for loop, we use another for loop to run through the list of languages associated with each person:
+
