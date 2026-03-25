@@ -3,6 +3,22 @@
 cars = ['audi', 'ferrari', 'toyota', 'honda']
 print(cars)
 
+print()                          
+message = f'my first car was not a {cars[1].title()}'      
+print(message)
+
+# appending in list
+cars.append('kia')
+print(f"\n after appending: ")   #! '\n' statement is for new line spacing
+for car in cars:                #! using for loop to iterate and print value of list one by one
+    print(car)
+
+
+# removing specific value from a list 
+cars.remove('ferrari')
+print(f"\n after removing specific value:")
+print(cars)
+
     
 
 
