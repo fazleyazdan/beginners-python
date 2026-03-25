@@ -29,5 +29,16 @@ print(cars)
 # printing the length of a list
 print(f"\n length of cars ", len(cars))
 
+#  sorting the list by alphabets
+cars.sort()
+print(f"\n after sorting the list:")
+print(cars)
+    
+# making copy of a list
+# print()
+cars_copy = cars.copy()                 
+print(f"\n after copying the list:")
+print(cars_copy)
+
 
 
