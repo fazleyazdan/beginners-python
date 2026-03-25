@@ -20,5 +20,14 @@ print(f"\n after removing specific value:")
 print(cars)
 
     
+# reversing the list
+cars.reverse()
+print(f"\n after reversing the list: ")
+print(cars)
+
+
+# printing the length of a list
+print(f"\n length of cars ", len(cars))
+
 
 
