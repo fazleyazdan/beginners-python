@@ -14,7 +14,7 @@ def count_duplicate_npm_packages(table_name):
             TableName=table_name,
             FilterExpression="#reg = :val",
             ExpressionAttributeNames={"#reg": "registry_name"},
-            ExpressionAttributeValues={":val": {"S": "pypi"}}
+            ExpressionAttributeValues={":val": {"S": "julia"}}
         ):
             for item in page.get('Items', []):
                 name = item.get('name', {}).get('S')
@@ -36,4 +36,4 @@ if __name__ == "__main__":
     
     duplicates = count_duplicate_npm_packages(table_name)
     
-    print(f"Total duplicate pypi package records: {duplicates}")
+    print(f"Total duplicate julia package records: {duplicates}")
