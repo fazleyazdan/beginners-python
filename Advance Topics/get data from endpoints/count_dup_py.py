@@ -28,7 +28,7 @@ def count_duplicate_npm_packages(table_name):
     duplicate_records = sum(count for count in name_counts.values() if count > 1)
 
     return duplicate_records
-
+ 
 
 # Example usage
 if __name__ == "__main__":
