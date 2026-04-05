@@ -29,7 +29,7 @@ def count_duplicate_npm_packages(table_name):
 
     return duplicate_records
  
-
+ 
 # Example usage
 if __name__ == "__main__":
     table_name = 'package-prd'
