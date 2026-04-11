@@ -27,3 +27,8 @@ def sum_natural_numbers1(n):
         sum += i
     return sum
 
+print(sum_natural_numbers1(4))
+
+
+# In Python, the range(start, stop) function generates numbers starting from start and up to, but not including, stop.
+# So, if you want to include the number n in your loop, you need to set the stop parameter to n + 1.
