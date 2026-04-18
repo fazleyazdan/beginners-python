@@ -82,3 +82,51 @@ class Battery:
         else:
             self.battery_size = new        
     
+class ElectricCar(car):
+    
+    def __init__(self, make, model, year):
+        
+        ''' Calling init from the parent class, which initializes attributes'''
+        super().__init__(make, model, year)
+        self.battery = Battery()            #! see docstring 1 below                                   
+               
+    # def describe_battery(self):
+    #     print(f"\nThis battery has {self.battery_size}-KWh battery")
+
+my_ecar = ElectricCar('nissan', 'leaf', 2024)
+print(my_ecar.descriptive_name())
+
+my_ecar.battery.describe_battery()
+my_ecar.battery.get_range()
+
+
+
+""" In the ElectricCar class, we now add an attribute called self.battery 3. 
+This line tells Python to create a new instance of Battery (with a default size 
+of 40, because we're not specifying a value) and assign that instance to the 
+attribute self.battery. This will happen every time the __init__() method 
+is called; any ElectricCar instance will now have a Battery instance created 
+automatically.
+We create an electric car and assign it to the variable my_leaf. When 
+we want to describe the battery, we need to work through the car's battery
+attribute
+"""
+
+#! i can also make Battery object for dynamic battery size
+
+battery_obj = Battery(50)
+battery_obj.describe_battery()
+battery_obj.get_range()
+
+
+# Battery Upgrade: Use the final version of electric_car.py from this section. 
+# Add a method to the Battery class called upgrade_battery(). This method 
+# should check the battery size and set the capacity to 65 if it isn’t already. 
+# Make an electric car with a default battery size, call get_range() once, and then 
+# call get_range() a second time after upgrading the battery. You should see an 
+# increase in the car’s range.
+
+print(f"\nafter upgrading the battery:")
+print(f"---------------------------------")
+my_ecar.battery.upgrade_battery(60)
+my_ecar.battery.get_range()
