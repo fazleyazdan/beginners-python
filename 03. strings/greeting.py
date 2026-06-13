@@ -2,7 +2,7 @@
 #* Note that this code assumes that the number of names is even and that each name consists of a first name and a last name. 
 # If the number of names is odd or if names are formatted differently, the code may not behave as expected.
 # friends = """ ... """.split(): This creates a multiline string with names separated by newlines 
-# and then uses the split() method to convert it into a list of names. Each name becomes an element in the list.
+# and then uses the split() method to convert it into a list of names. Each name becomes an element in the list. 
 
 greeting_list = """Coral Alfaro
 Phillip Ryan
