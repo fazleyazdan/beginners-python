@@ -1,6 +1,6 @@
 # extract 'firstName' of accounting only in sales.
 
-
+ 
 from munch import Munch
 
 sales = { 
