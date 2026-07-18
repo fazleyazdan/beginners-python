@@ -4,7 +4,7 @@
 cars = ['toyota', 'ferrari', 'audi', 'honda']
 print("\nlast car i owned was:" + cars[-1])
   
-
+ 
 #* removing an item using pop() method and storing and printing the last item popped
 popped_item = cars.pop() 
 print(f"last item popped from the list: {popped_item}")
