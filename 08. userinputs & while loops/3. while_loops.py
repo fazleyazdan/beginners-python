@@ -14,5 +14,5 @@ while 'cat' in pets:
     
 print(f"\nafter removing cat from list:\t {pets}\n")
 
-
+ 
         
